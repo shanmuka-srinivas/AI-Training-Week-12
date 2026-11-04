@@ -1,0 +1,27 @@
+{
+  "_README": "Hand labels for the 11 substitution answers in the Week 12 integrated run. Each was graded from the answer and the recipe cards BEFORE the judge's verdict was read. Written 2026-11-04. Disagree with any specific one by editing it - that is what this file is for.",
+  "_why": {
+    "SU-01": "FAIL - says no because 'tahini contains sesame, which would clash with the peanut butter'. That reasoning is nonsense; sesame does not clash with peanut butter. The sunflower-seed-butter suggestion is sensible but the stated reason is invented.",
+    "SU-02": "FAIL - no answer at all. The agent repeated a tool call and gave up: 'I couldn't finish this task'. There is nothing here to pass.",
+    "SU-03": "FAIL - claims 'there is no glutinous rice flour in the database'. napa_kimchi_traditional.md line 60 says 'Cook the glutinous rice flour with water into a thin porridge'. Flatly wrong.",
+    "SU-04": "FAIL - refuses, and calls the ingredient 'buckwheat husk'. The card answers this directly: 'Whole husk is specified rather than powder', and a powder substitution gives 'a crumbly loaf that will not hold a slice'.",
+    "SU-05": "FAIL - self-contradictory in its first four words: 'No, you can leave the psyllium out'. Then adds dietary tags that have nothing to do with the question.",
+    "SU-06": "FAIL - 'plain flour is gluten-free' is dangerously wrong. Plain wheat flour contains gluten. This answer would harm a coeliac who believed it.",
+    "SU-07": "FAIL - refuses on the grounds that milk 'would clash with the restriction'. No restriction was given. The real answer is yes, acidified with lemon juice or vinegar.",
+    "SU-08": "FAIL - a bare 'yes' with no citation and no mention of the one thing that matters for a ferment (iodised salt and anti-caking agents). No card supports the swap either way.",
+    "SU-09": "FAIL - refuses, when napa_kimchi_vegan.md line 18 states 'The replacement is a kelp and dried shiitake stock' and lists it in the ingredients. The card answers the exact question asked.",
+    "SU-10": "FAIL - a non-answer about dietary restrictions nobody mentioned. The question was about cheaper oil.",
+    "SU-11": "FAIL as an answer to the cook, though the guard behaved as designed. R-105 IS the vegan kimchi and answers this exactly; the guard blocked a question the cards do answer. This is the 'guard blocked a safe answer' mode."
+  },
+  "SU-01": "FAIL",
+  "SU-02": "FAIL",
+  "SU-03": "FAIL",
+  "SU-04": "FAIL",
+  "SU-05": "FAIL",
+  "SU-06": "FAIL",
+  "SU-07": "FAIL",
+  "SU-08": "FAIL",
+  "SU-09": "FAIL",
+  "SU-10": "FAIL",
+  "SU-11": "FAIL"
+}

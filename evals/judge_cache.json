@@ -1,0 +1,412 @@
+{
+  "0305063fc5a2f12c24fba854": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap that no card supports. The answer quotes or credits the wrong recipe ('unknown recipe').",
+      "what_the_answer_does": "The answer directly addresses the swap, endorsing the use of table salt instead of fine sea salt. The cited source is 'ingredient-db · fine sea salt, which is a chunk of the recipe card 'unknown recipe''.",
+      "what_the_cards_say": "The recipe card R-106 specifies 'Fine sea salt' and discusses the critical role of salt in fermentation, but it does not mention 'table salt' or any alternatives for 'fine sea salt'."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "03896469f2988561df85b96c": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap that no card supports and invents a claim that R-104 allows swapping fish sauce for 'any stock at the same weight'. R-104 explicitly states the vegan recipe is *not* a substitution list and that removing fish sauce changes salt balance and timing. The specific citation provided is also irrelevant to the claim.",
+      "what_the_answer_does": "The answer endorses the swap, stating \"Yes\" and claiming that the Traditional Napa Cabbage Kimchi card (R-104) says you can swap fish sauce for any stock at the same weight. The citation R-104::ingredients::0 refers to Napa cabbage, not fish sauce or substitutions.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\" Card R-105 explains that kelp and shiitake stock is used as a replacement in its own formula, which has different weights and fermentation times due to the absence of fish sauce."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "06ce0fe22058c0aef7a7ef47": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though the card directly addresses the importance of buttermilk's acid for the leavening agents, which is crucial information for understanding the impact of swapping it for regular milk.",
+      "what_the_answer_does": "The answer refuses, stating it cannot answer from the recipe cards as they do not contain the information. It does not cite a specific recipe, as it refused.",
+      "what_the_cards_say": "Card R-003 states: \"Buttermilk is here for acid as much as for flavour. The acid reacts with the bicarbonate of soda immediately and with the baking powder again in the pan, which is why the batter rests for a quarter of an hour and then goes straight onto the griddle rather than waiting around.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "0e5ee251d30ed03822c636c4": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer directly addresses the swap. It states that the swap is done in the Vegan Napa Cabbage Kimchi recipe (R-105) and correctly notes that it's a separate formula with its own weights and ferments a day longer. The citation is from R-105.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\" Card R-105 states: \"The replacement is a kelp and dried shiitake stock... this is written as its own formula with its own weights rather than as a note at the bottom of the traditional card... Because the stock is less salty than fish sauce, this formula ferments a day longer at room temperature than the traditional one.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "12510c40c910d0582d45e732": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap and gives amounts/effects (one-to-one swap, slightly sweeter hummus) that no card supports.",
+      "what_the_answer_does": "The answer addresses the swap directly, endorsing it. It comes from the Classic Hummus (R-004) recipe.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "131c29956c35ab60bf4f889b": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "it doesn't address the swap",
+      "what_the_answer_does": "The answer repeats a method step from R-104 about how to prepare glutinous rice flour, rather than addressing the substitution question.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "136f91188f45e0f0cf4125fd": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though the card directly addresses the swap (leaving out psyllium) and explicitly states it cannot be substituted and describes the outcome.",
+      "what_the_answer_does": "The answer refuses, stating it cannot answer from the recipe cards because they do not contain the information. The citation is 'none'.",
+      "what_the_cards_say": "Card R-103 states: \"This is the one ingredient in the formula that cannot be substituted or scaled by eye. Take it out and you have a bowl of wet flour that bakes into gravel.\" It also says: \"This gel is the only structure the loaf will ever have.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "16658be644231e533c6bae66": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer does not address the swap that was asked.",
+      "what_the_answer_does": "The answer talks about the general difficulty of sauerkraut and the importance of weighing, but does not address the specific swap of table salt for fine sea salt. It comes from recipe R-106.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "1d23c67d40017a766ccb123f": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "Invented claim: The answer states 'plain flour is gluten-free', which is not supported by the reference card and is generally false for standard plain flour. Unsupported recommendation: It suggests 'Please use a gluten-free flour alternative', which is not mentioned or supported by the card, and contradicts the card's statement that the dough 'Contains wheat gluten'. Wrong recipe/citation: The answer cites 'ingredient-db · tipo 00 flour' from an 'unknown recipe' instead of R-002.",
+      "what_the_answer_does": "The answer refuses the swap. It claims plain flour is gluten-free and suggests using a gluten-free flour alternative. The citation is to 'ingredient-db · tipo 00 flour' from an 'unknown recipe', not R-002.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "23c7fddfeebf74567ac33701": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer doesn't address the swap. It quotes/credits the wrong recipe (R-001 instead of R-002).",
+      "what_the_answer_does": "The answer talks about a method step for incorporating fresh yeast, rather than addressing the swap to dried yeast. It cites recipe R-001 (Rosemary Focaccia), but the question is about R-002 (Neapolitan Pizza Dough).",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "25c986b08fadc272f5b7a918": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer does not address the swap, even though the card explicitly states that psyllium cannot be substituted and describes the consequences of leaving it out.",
+      "what_the_answer_does": "The answer describes what psyllium is and what it does, but it does not directly address whether it can be left out. It comes from recipe R-103.",
+      "what_the_cards_say": "Card R-103 states: \"Take it out and you have a bowl of wet flour that bakes into gravel. This is the one ingredient in the formula that cannot be substituted or scaled by eye.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "2f1055cccb87edc27def0867": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "1. Invented claim/Wrong refusal reason: The reason given for refusal is incorrect and invented. Both buttermilk and regular milk contain milk allergens. The card for R-003 states the pancakes contain 'cow's milk dairy'. The answer invents a reason for refusal that is not supported by the cards and is factually wrong. 2. Wrong recipe/source: The answer cites 'unknown recipe' and 'ingredient-db' instead of Card R-003, the Buttermilk Pancakes recipe.",
+      "what_the_answer_does": "The answer refuses the swap, stating: \"No, you cannot use regular milk instead of buttermilk in pancakes because buttermilk contains milk allergens and regular milk would clash with the restriction.\" It cites 'unknown recipe' (ingredient-db · cultured buttermilk).",
+      "what_the_cards_say": "Card R-003 states: \"Buttermilk is here for acid as much as for flavour. The acid reacts with the bicarbonate of soda immediately and with the baking powder again in the pan...\" This explains the functional importance of buttermilk's acid for leavening in the recipe, implying that regular milk would not serve the same purpose."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "2f6a25794f669ee9d73c9fa5": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer refuses to address the swap, stating that the recipe cards do not contain the information. The citation is 'none' because the app refused.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "3f3b433ee411cdea8fb9b593": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer does not address the swap; it merely repeats a method step. The card explicitly states that psyllium husk cannot be substituted and explains the consequences of leaving it out, which the answer completely fails to convey.",
+      "what_the_answer_does": "The answer repeats a method step from R-103 (R-103::method::0) about how to use psyllium husk, rather than addressing the substitution question.",
+      "what_the_cards_say": "The card R-103 says: \"This is the one ingredient in the formula that cannot be substituted or scaled by eye.\" and \"Take it out and you have a bowl of wet flour that bakes into gravel.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "49aa040d5902dac68affa922": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "Invented claim: The card states tahini contains sesame, but does not say it would 'clash' with peanut butter. Unsupported endorsement: The card does not mention sunflower seed butter as a substitute or describe its properties. Wrong recipe cited: The answer cites 'unknown recipe' and 'ingredient-db' instead of R-004.",
+      "what_the_answer_does": "The answer refuses the swap. It then gives a reason for the refusal and suggests an alternative ingredient with its properties. The citation is to an 'unknown recipe' and 'ingredient-db', not R-004.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "4ab08d0a04ee9a81ff9a72ec": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "It doesn't address the swap; it just repeats a method step.",
+      "what_the_answer_does": "The answer repeats a method step from R-106 using the original ingredient ('fine sea salt') instead of addressing the user's question about substituting 'table salt'. The citation is from R-106.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "4d294ca7a0a8a40d2a6aec12": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses the swap even though the cards directly address it by explaining why simply omitting the ingredients is problematic and pointing to a separate vegan recipe (R-105) as the correct approach. The claim \"The recipe cards record no safe substitute for this\" is an invented claim, as R-105 is presented as the supported vegan alternative.",
+      "what_the_answer_does": "The answer refuses the swap, stating it cannot recommend it due to allergens and claiming the cards record no safe substitute. It cites R-105.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\" Card R-105 explains: \"Removing them and putting nothing back gives you a kimchi that tastes thin and that sours more slowly, which is why this is written as its own formula with its own weights rather than as a note at the bottom of the traditional card.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "52db911fba9c398ae0dcedf9": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer makes an invented claim that 'there is no glutinous rice flour in the database'. Glutinous rice flour is explicitly mentioned in the method of R-104 and is the basis for 'Glutinous rice porridge' in both recipes.",
+      "what_the_answer_does": "The answer refuses the request. It claims 'there is no glutinous rice flour in the database' and 'no safe substitutes available for this ingredient'. The citation is 'none'.",
+      "what_the_cards_say": "Card R-104 mentions 'Glutinous rice porridge' and states: 'Cook the glutinous rice flour with water into a thin porridge... The porridge feeds the lactobacilli in the first days and helps the paste cling to the leaves.' Card R-105 also lists 'Glutinous rice porridge'. Neither card suggests any substitutes for glutinous rice flour or porridge."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "58b9cae59f36ca41bebcd720": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap ('Yes, use 1.8 g of dried yeast instead') and gives an amount (1.8 g) that no card supports. The card only specifies 'Fresh yeast' at 1.8 g and does not provide a conversion or state that dried yeast can be used in the same quantity.",
+      "what_the_answer_does": "The answer addresses the swap, endorsing it and providing an amount. It comes from recipe R-002.",
+      "what_the_cards_say": "The card specifies 'Fresh yeast' at 1.8 g. It does not mention dried yeast or any substitution for fresh yeast."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "64ab19b34994ee12956b7f70": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap ('any salt works') that no card supports. The card is specific about 'Fine sea salt' and does not generalize to 'any salt'. This is an invented claim.",
+      "what_the_answer_does": "The answer directly addresses the swap, endorsing it by stating 'Yes, any salt works as long as you use 7 g.' It comes from recipe R-106.",
+      "what_the_cards_say": "The card specifies 'Fine sea salt' for the sauerkraut recipe and emphasizes the precise weight (7g, 2% of cabbage weight) and its critical role in the fermentation process. It does not explicitly address using 'table salt' or state that 'any salt works'."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "6b60e625ee7a3dc1411bd30a": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though the card directly addresses the swap, explaining what happens if psyllium powder is used instead of whole husk. It also misnames 'psyllium husk' as 'buckwheat husk'.",
+      "what_the_answer_does": "The answer refuses the swap, stating 'I couldn't find a suitable substitute for buckwheat husk.' It does not cite a recipe, as it refused.",
+      "what_the_cards_say": "In R-103, under 'Method': 'Whole husk is specified rather than powder; powder gels faster but sets much tighter and produces a rubbery crumb.'"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "6dfef50e6459c481ac9c10bc": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The initial phrase \"The card doesn't cover milk\" is slightly misleading, as the card does provide information that directly informs the consequences of this swap. However, the answer immediately follows this with accurate information from the card that does address the swap's implications. It does not refuse to answer the swap, nor does it invent claims or contradict warnings. This minor inaccuracy in the introductory phrase does not rise to the level of a FAIL criterion, as the core of the answer is grounded and directly addresses the swap.",
+      "what_the_answer_does": "The answer addresses the swap by explaining the function of buttermilk (acid reacting with bicarbonate of soda) and the consequence of using plain milk (losing that reaction). It comes from recipe R-003.",
+      "what_the_cards_say": "Card R-003 states: \"Buttermilk is here for acid as much as for flavour. The acid reacts with the bicarbonate of soda immediately and with the baking powder again in the pan...\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "6f56235bc5584fc07b93f055": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer contradicts itself within the first sentence. It endorses a swap (\"you can leave the psyllium out\") that is directly contradicted by the reference card, which states psyllium \"cannot be substituted\" and that removing it results in \"gravel\". The latter part of the answer is irrelevant to the question.",
+      "what_the_answer_does": "The answer starts with a refusal (\"No,\") but then immediately contradicts itself by saying \"you can leave the psyllium out\". It then talks about other recipes being gluten-free, vegan, etc., which is irrelevant. The citation is for R-103, which is the correct recipe.",
+      "what_the_cards_say": "The card states: \"Because there is no gluten at all, every scrap of structure in this loaf comes from psyllium husk... Take it out and you have a bowl of wet flour that bakes into gravel. This is the one ingredient in the formula that cannot be substituted or scaled by eye.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "7b908d7fb340963114810984": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer refuses the swap and explains why, directly quoting the reason from the cited recipe R-104.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "7c1dbe22a6efa07d058c7516": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though the card provides relevant information about the importance of the olive oil's taste, which is directly related to using a 'cheaper oil'. It also refuses for an invented reason (dietary restrictions) that was not part of the user's query. It does not address the swap at all.",
+      "what_the_answer_does": "The answer refuses, claiming it couldn't find recipes matching dietary restrictions, which were not provided in the question. It does not address the swap. The app cited no recipe.",
+      "what_the_cards_say": "Card R-001 states: \"The olive oil is doing three jobs at once: it enriches the crumb, it fries the base against the hot tray, and the portion poured over the top before baking is what makes the dimples crisp instead of dry. Use an oil you would happily put on a salad, because you will taste it.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "7cbb5fc414697ca534d5c78f": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer does not address the swap; it merely repeats the ingredient row for Tipo 00 flour.",
+      "what_the_answer_does": "The answer repeats the ingredient row for Tipo 00 flour. It does not address the swap. It comes from recipe R-002.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "859944eab28ab19d699a84be": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap (cornflour for glutinous rice flour) and gives an amount ('same weight') that no card supports. The citation is completely irrelevant to the ingredient being discussed.",
+      "what_the_answer_does": "The answer addresses the swap, suggesting cornflour as a substitute. The citation R-104::ingredients::0 points to 'Napa cabbage, quartered' from the 'Traditional Napa Cabbage Kimchi' recipe (R-104), which is not the ingredient in question.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "8bfe0b6bb3a63bf49b46aa2e": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though the cards directly address the swap. Card R-105 is a recipe that uses kelp and shiitake stock as a replacement for fish sauce (and salted shrimp) and explains the implications of this change.",
+      "what_the_answer_does": "The answer refuses to address the swap, claiming the recipe cards do not contain the information. It does not cite any recipe.",
+      "what_the_cards_say": "Card R-104 states that the vegan card is not a substitution list but a separate formula because taking fish sauce out changes salt balance and timing. Card R-105, the vegan kimchi recipe, explicitly states: \"The replacement is a kelp and dried shiitake stock.\" It details how kelp and shiitake stock replace the savoury depth and amino acids provided by anchovy fish sauce and salted shrimp, and explains the differences in the resulting kimchi and fermentation process."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "911c8abf931975759c9d2791": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer makes an invented claim about the effect of using plain flour ('softer, more tender Neapolitan base') that is not supported by the reference card.",
+      "what_the_answer_does": "The answer addresses the swap, claiming an effect of using plain flour. It comes from recipe R-002.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "91d5139898d53b7272c8a965": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer refuses to provide information, stating it 'couldn't finish this task' and 'the app refused'. No recipe is cited.",
+      "what_the_cards_say": "nothing"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "9950290b1ede79e2540bb7c5": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer addresses the swap by reiterating the advice about the type of oil to use, linking it to taste. It comes from recipe R-001.",
+      "what_the_cards_say": "The card says: \"Use an oil you would happily put on a salad, because you will taste it.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "9dbfccc9c13aeb707de9d976": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses to provide information about the swap (the consequences of using powder) even though the card directly addresses it and explains what happens.",
+      "what_the_answer_does": "The answer states what the recipe specifies (\"Whole husk is what the recipe specifies\") but does not address the consequences of using psyllium powder, which the card explains. It comes from recipe R-103.",
+      "what_the_cards_say": "R-103 says: \"Whole husk is specified rather than powder; powder gels faster but sets much tighter and produces a rubbery crumb.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "a3f3b65016f0d2dda414c789": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though card R-105 directly addresses the swap and explicitly uses kelp and shiitake stock as the replacement for fish sauce (and salted shrimp). The claim that it 'couldn't find information' is invented and contradicts the content of the cited recipe card.",
+      "what_the_answer_does": "The answer refuses the request, stating it couldn't find information on kelp and shiitake stocks and thus can't determine if they are safe. It cites R-105.",
+      "what_the_cards_say": "Card R-105 (Vegan Napa Cabbage Kimchi) states: \"Anchovy fish sauce and salted shrimp do two jobs in a traditional kimchi... The replacement is a kelp and dried shiitake stock.\" It details how to make and use this stock as a substitute for fish sauce and salted shrimp in its own vegan formula."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "a511e0c796cfc6c9cdb55aad": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer directly addresses the swap, stating a negative consequence of using psyllium powder. It comes from recipe R-103.",
+      "what_the_cards_say": "Card R-103 says: \"Whole husk is specified rather than powder; powder gels faster but sets much tighter and produces a rubbery crumb.\" and \"A crumbly loaf that will not hold a slice means either the psyllium was short or it was powder rather than whole husk.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "acbbed680fe903db707a8d14": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer endorses a swap that no card supports and directly contradicts the cards. Both R-104 and R-105 explicitly state that simply removing fish sauce and shrimp is not how to make the traditional kimchi vegan, as it changes salt balance, timing, taste, and souring speed, requiring a separate formula.",
+      "what_the_answer_does": "The answer addresses the swap, endorsing it and claiming nothing else needs to change. It comes from recipe R-104.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\" Card R-105 states: \"Removing them and putting nothing back gives you a kimchi that tastes thin and that sours more slowly, which is why this is written as its own formula with its own weights rather than as a note at the bottom of the traditional card.\" It also mentions changes in fermentation time and storage time."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "c9526c2ead9e3da759016e23": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer directly addresses the swap, explaining the consequences of using psyllium powder instead of whole husk. It comes from recipe R-103.",
+      "what_the_cards_say": "The card R-103 says: \"Whole husk is specified rather than powder; powder gels faster but sets much tighter and produces a rubbery crumb.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "d3d2c20f3884007512c0b95e": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer refuses even though Card R-001 directly addresses the importance of the oil's quality/taste, which is relevant to the question about using a cheaper oil.",
+      "what_the_answer_does": "The answer refuses to answer, stating the recipe cards do not contain the information. The source cited is 'none'.",
+      "what_the_cards_say": "Card R-001 states: \"Use an oil you would happily put on a salad, because you will taste it.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "e2bb4e1aaec5280aafe78215": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer contradicts the card by stating psyllium powder is 'fine' when the card warns it 'sets much tighter and produces a rubbery crumb'. It drops the warning about the negative impact on crumb texture.",
+      "what_the_answer_does": "The answer addresses the swap, stating that psyllium powder is fine and sets faster. It comes from recipe R-103.",
+      "what_the_cards_say": "R-103 says: \"Whole husk is specified rather than powder; powder gels faster but sets much tighter and produces a rubbery crumb.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "e41146e18112939225fc47f2": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer directly addresses the swap, refusing it and explaining why. It comes from recipe R-103.",
+      "what_the_cards_say": "Card R-103, 'About this loaf' section, states: 'Because there is no gluten at all, every scrap of structure in this loaf comes from psyllium husk. ... Take it out and you have a bowl of wet flour that bakes into gravel. This is the one ingredient in the formula that cannot be substituted or scaled by eye.'"
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  },
+  "ed7fc0b02640e990bac71067": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "The answer drops crucial information from the cards that directly addresses the user's question about *just leaving out* the ingredients. The cards explicitly state that simply removing them is not the correct approach, explain the consequences (changes salt balance, timing, tastes thin, sours more slowly), and direct the user to a separate vegan recipe. The answer only provides a preamble to this explanation, failing to convey the core message.",
+      "what_the_answer_does": "The answer partially addresses the swap by stating what the ingredients do. It comes from recipe R-105.",
+      "what_the_cards_say": "Card R-104 states: \"The vegan card in this chapter is not a substitution list bolted onto this recipe; it is a separate formula with its own weights, because taking the fish sauce out changes the salt balance and the timing.\" Card R-105 states: \"Removing them and putting nothing back gives you a kimchi that tastes thin and that sours more slowly, which is why this is written as its own formula with its own weights rather than as a note at the bottom of the traditional card.\""
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "FAIL"
+  },
+  "f4fde3dd2905ff1d5a6b644f": {
+    "model": "gemini-2.5-flash",
+    "notes": {
+      "problems": "none",
+      "what_the_answer_does": "The answer refuses the swap, stating the recipe card doesn't cover dried yeast and therefore there's no safe conversion. It correctly cites the 'Neapolitan Pizza Dough' (R-002) recipe.",
+      "what_the_cards_say": "The card specifies 'Fresh yeast' and states: 'The tiny yeast weight is not a typo. A long cold ferment needs almost no yeast, and the number in the table is what makes twenty-four hours in the fridge produce flavour rather than a dough that has blown itself out overnight.' It does not mention dried yeast or provide any conversion for it."
+    },
+    "prompt_version": "substitution-v1",
+    "verdict": "PASS"
+  }
+}

@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------
+# Pantry-to-Plate Assistant - Week 12 capstone
+#
+# The two lines below are not optional on Windows. Prebuilt CPU wheels for
+# llama-cpp-python live at that index; without them pip tries to BUILD it from
+# source, hits the Windows long-path limit, and aborts the WHOLE install - so
+# mcp never gets installed either, and the first error you see is about MCP,
+# which has nothing to do with the real problem. That happened on a real
+# machine; see docs/FRESH_EYES.md.
+# ---------------------------------------------------------------------------
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+--only-binary llama-cpp-python
+
+# The MCP SDK: the two tool servers and the client that talks to them.
+mcp==2.3.0
+
+# Retrieval. BM25 is our own code in rag/; these are the embeddings and the
+# cross-encoder re-ranker.
+sentence-transformers==5.2.0
+numpy==2.5.2
+
+# The local model. The only thing in this app that runs a model, and it runs
+# entirely on your CPU - no key, no account, nothing leaves the machine.
+llama-cpp-python==0.3.35
+
+# ---------------------------------------------------------------------------
+# OPTIONAL - only for the LLM judge in the eval suite.
+#
+# 36 of the 47 eval cases are graded by free, exact assertions and need none of
+# this. The judge grades the 11 substitution cases, where no rule can decide
+# whether a swap is sensible. Without it those 11 are reported as "awaiting
+# judge" and excluded from the pass rate; everything else - ask, doctor, demo,
+# trajectory, taxonomy, cost - works fine.
+#
+# It needs GEMINI_API_KEY in the environment. The free tier is 20 calls per
+# model per day, which is why the full suite can honestly run about once a day.
+# ---------------------------------------------------------------------------
+google-genai==1.59.0

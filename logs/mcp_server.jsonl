@@ -1,0 +1,91 @@
+{"ts": "2026-11-04T06:39:37+00:00", "server": "recipe-cards", "trace_id": "doctor-check", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}
+{"ts": "2026-11-04T06:42:06+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "none"}}
+{"ts": "2026-11-04T06:42:23+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T06:42:40+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:42:59+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:43:17+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:43:34+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:43:50+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:44:08+00:00", "server": "recipe-cards", "trace_id": "t-20261104-450f95", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:44:20+00:00", "server": "recipe-cards", "trace_id": "t-20261104-0693e3", "tool": "scale_recipe", "args": {"recipe_id": "R-123", "ingredient": "garlic", "target_grams": 100.0}}
+{"ts": "2026-11-04T06:45:01+00:00", "server": "recipe-cards", "trace_id": "t-20261104-6e8bdb", "tool": "search_recipes", "args": {"query": "pancakes", "dietary_tag": null}}
+{"ts": "2026-11-04T06:45:15+00:00", "server": "recipe-cards", "trace_id": "t-20261104-6e8bdb", "tool": "get_recipe_section", "args": {"recipe_id": "R-003", "section": "ingredients"}}
+{"ts": "2026-11-04T06:45:37+00:00", "server": "recipe-cards", "trace_id": "t-20261104-d13ffc", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "method"}}
+{"ts": "2026-11-04T06:46:00+00:00", "server": "recipe-cards", "trace_id": "t-20261104-58633a", "tool": "search_recipes", "args": {"query": "rosemary focaccia", "dietary_tag": null}}
+{"ts": "2026-11-04T06:46:12+00:00", "server": "recipe-cards", "trace_id": "t-20261104-58633a", "tool": "get_recipe_section", "args": {"recipe_id": "R-001", "section": "method"}}
+{"ts": "2026-11-04T06:46:27+00:00", "server": "recipe-cards", "trace_id": "t-20261104-58633a", "tool": "get_recipe_section", "args": {"recipe_id": "R-001", "section": "method"}}
+{"ts": "2026-11-04T06:46:57+00:00", "server": "ingredient-db", "trace_id": "t-20261104-50eea1", "tool": "ingredient_info", "args": {"name": "hummus"}}
+{"ts": "2026-11-04T06:47:28+00:00", "server": "recipe-cards", "trace_id": "t-20261104-49b271", "tool": "get_recipe_section", "args": {"recipe_id": "R-123", "section": "ingredients"}}
+{"ts": "2026-11-04T06:47:45+00:00", "server": "recipe-cards", "trace_id": "t-20261104-49b271", "tool": "search_recipes", "args": {"query": "pizza dough", "dietary_tag": null}}
+{"ts": "2026-11-04T06:48:04+00:00", "server": "recipe-cards", "trace_id": "t-20261104-49b271", "tool": "get_recipe_section", "args": {"recipe_id": "R-001", "section": "ingredients"}}
+{"ts": "2026-11-04T06:48:36+00:00", "server": "recipe-cards", "trace_id": "t-20261104-799c8c", "tool": "scale_recipe", "args": {"recipe_id": "R-123", "ingredient": "olive oil", "target_grams": 1000.0}}
+{"ts": "2026-11-04T06:49:28+00:00", "server": "recipe-cards", "trace_id": "t-20261104-bd1fe5", "tool": "search_recipes", "args": {"query": "hummus", "dietary_tag": null}}
+{"ts": "2026-11-04T06:49:45+00:00", "server": "recipe-cards", "trace_id": "t-20261104-bd1fe5", "tool": "get_recipe_section", "args": {"recipe_id": "R-004", "section": "ingredients"}}
+{"ts": "2026-11-04T06:50:11+00:00", "server": "recipe-cards", "trace_id": "t-20261104-9d11a8", "tool": "search_recipes", "args": {"query": "buckwheat loaf", "dietary_tag": "none"}}
+{"ts": "2026-11-04T06:50:28+00:00", "server": "recipe-cards", "trace_id": "t-20261104-f55323", "tool": "search_recipes", "args": {"query": "", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T06:50:47+00:00", "server": "ingredient-db", "trace_id": "t-20261104-664d30", "tool": "ingredient_info", "args": {"name": "buckwheat"}}
+{"ts": "2026-11-04T06:51:10+00:00", "server": "recipe-cards", "trace_id": "t-20261104-96d28f", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "method"}}
+{"ts": "2026-11-04T06:51:35+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e3dec2", "tool": "search_recipes", "args": {"query": "country loaf", "dietary_tag": null}}
+{"ts": "2026-11-04T06:51:59+00:00", "server": "recipe-cards", "trace_id": "t-20261104-682194", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T06:52:13+00:00", "server": "recipe-cards", "trace_id": "t-20261104-682194", "tool": "get_recipe_section", "args": {"recipe_id": "R-105", "section": "ingredients"}}
+{"ts": "2026-11-04T06:52:32+00:00", "server": "recipe-cards", "trace_id": "t-20261104-682194", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": null}}
+{"ts": "2026-11-04T06:52:48+00:00", "server": "recipe-cards", "trace_id": "t-20261104-682194", "tool": "get_recipe_section", "args": {"recipe_id": "R-104", "section": "ingredients"}}
+{"ts": "2026-11-04T06:53:25+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e39772", "tool": "get_recipe_section", "args": {"recipe_id": "R-123", "section": "method"}}
+{"ts": "2026-11-04T06:53:43+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e39772", "tool": "search_recipes", "args": {"query": "buckwheat bread", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:54:02+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e39772", "tool": "get_recipe_section", "args": {"recipe_id": "R-103", "section": "method"}}
+{"ts": "2026-11-04T06:54:23+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e39772", "tool": "get_recipe_section", "args": {"recipe_id": "R-103", "section": "ingredients"}}
+{"ts": "2026-11-04T06:54:41+00:00", "server": "recipe-cards", "trace_id": "t-20261104-e39772", "tool": "get_recipe_section", "args": {"recipe_id": "R-103", "section": "overview"}}
+{"ts": "2026-11-04T06:55:22+00:00", "server": "ingredient-db", "trace_id": "t-20261104-bfcc67", "tool": "ingredient_info", "args": {"name": "kimchi"}}
+{"ts": "2026-11-04T06:55:30+00:00", "server": "recipe-cards", "trace_id": "doctor-check", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}
+{"ts": "2026-11-04T06:55:47+00:00", "server": "ingredient-db", "trace_id": "t-20261104-1174b3", "tool": "ingredient_info", "args": {"name": "pancakes"}}
+{"ts": "2026-11-04T06:56:07+00:00", "server": "ingredient-db", "trace_id": "t-20261104-f2cac5", "tool": "ingredient_info", "args": {"name": "focaccia"}}
+{"ts": "2026-11-04T06:56:25+00:00", "server": "ingredient-db", "trace_id": "t-20261104-f10c26", "tool": "ingredient_info", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T06:56:45+00:00", "server": "recipe-cards", "trace_id": "t-20261104-706ca9", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T06:57:20+00:00", "server": "ingredient-db", "trace_id": "t-20261104-a3b1f4", "tool": "substitutes_for", "args": {"name": "tahini"}}
+{"ts": "2026-11-04T06:57:48+00:00", "server": "ingredient-db", "trace_id": "t-20261104-ecc89e", "tool": "ingredient_info", "args": {"name": "dried yeast"}}
+{"ts": "2026-11-04T06:57:59+00:00", "server": "ingredient-db", "trace_id": "t-20261104-ecc89e", "tool": "substitutes_for", "args": {"name": "dried yeast"}}
+{"ts": "2026-11-04T06:58:21+00:00", "server": "ingredient-db", "trace_id": "t-20261104-e64b19", "tool": "substitutes_for", "args": {"name": "glutinous rice flour"}}
+{"ts": "2026-11-04T06:58:46+00:00", "server": "ingredient-db", "trace_id": "t-20261104-694073", "tool": "substitutes_for", "args": {"name": "buckwheat husk"}}
+{"ts": "2026-11-04T06:59:15+00:00", "server": "recipe-cards", "trace_id": "t-20261104-762b41", "tool": "search_recipes", "args": {"query": "gluten-free sourdough", "dietary_tag": "gluten-free"}}
+{"ts": "2026-11-04T06:59:48+00:00", "server": "ingredient-db", "trace_id": "t-20261104-52bd93", "tool": "ingredient_info", "args": {"name": "Tipo 00 flour"}}
+{"ts": "2026-11-04T07:00:18+00:00", "server": "ingredient-db", "trace_id": "t-20261104-ded4d5", "tool": "ingredient_info", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:00:42+00:00", "server": "ingredient-db", "trace_id": "t-20261104-94f2d5", "tool": "ingredient_info", "args": {"name": "fine sea salt"}}
+{"ts": "2026-11-04T07:01:08+00:00", "server": "recipe-cards", "trace_id": "t-20261104-dd6d73", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T07:01:20+00:00", "server": "ingredient-db", "trace_id": "t-20261104-dd6d73", "tool": "ingredient_info", "args": {"name": "kelp"}}
+{"ts": "2026-11-04T07:01:32+00:00", "server": "ingredient-db", "trace_id": "t-20261104-dd6d73", "tool": "ingredient_info", "args": {"name": "shiitake"}}
+{"ts": "2026-11-04T07:02:04+00:00", "server": "recipe-cards", "trace_id": "t-20261104-0606f1", "tool": "search_recipes", "args": {"query": "focaccia", "dietary_tag": "none"}}
+{"ts": "2026-11-04T07:02:31+00:00", "server": "recipe-cards", "trace_id": "t-20261104-0cfd16", "tool": "search_recipes", "args": {"query": "traditional kimchi", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T07:02:58+00:00", "server": "recipe-cards", "trace_id": "t-20261104-569edf", "tool": "search_recipes", "args": {"query": "country sourdough", "dietary_tag": null}}
+{"ts": "2026-11-04T07:03:26+00:00", "server": "recipe-cards", "trace_id": "t-20261104-b1b3f9", "tool": "search_recipes", "args": {"query": "rosemary focaccia", "dietary_tag": null}}
+{"ts": "2026-11-04T07:03:51+00:00", "server": "ingredient-db", "trace_id": "t-20261104-da488b", "tool": "ingredient_info", "args": {"name": "gochugaru"}}
+{"ts": "2026-11-04T07:04:19+00:00", "server": "recipe-cards", "trace_id": "t-20261104-6e7589", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": "none"}}
+{"ts": "2026-11-04T07:04:34+00:00", "server": "recipe-cards", "trace_id": "t-20261104-6e7589", "tool": "search_recipes", "args": {"query": "kimchi", "dietary_tag": "nut-free"}}
+{"ts": "2026-11-04T07:05:01+00:00", "server": "recipe-cards", "trace_id": "t-20261104-d63009", "tool": "search_recipes", "args": {"query": "sourdough starter", "dietary_tag": null}}
+{"ts": "2026-11-04T07:05:32+00:00", "server": "recipe-cards", "trace_id": "t-20261104-f97b8a", "tool": "search_recipes", "args": {"query": "sauerkraut", "dietary_tag": null}}
+{"ts": "2026-11-04T07:05:47+00:00", "server": "recipe-cards", "trace_id": "t-20261104-f97b8a", "tool": "search_recipes", "args": {"query": "sauerkraut", "dietary_tag": "nut-free"}}
+{"ts": "2026-11-04T07:06:03+00:00", "server": "recipe-cards", "trace_id": "t-20261104-f97b8a", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}
+{"ts": "2026-11-04T07:06:28+00:00", "server": "recipe-cards", "trace_id": "t-20261104-4f2913", "tool": "get_recipe_section", "args": {"recipe_id": "R-123", "section": "method"}}
+{"ts": "2026-11-04T07:07:00+00:00", "server": "recipe-cards", "trace_id": "t-20261104-f20717", "tool": "search_recipes", "args": {"query": "how to fix sauerkraut that smells bad", "dietary_tag": null}}
+{"ts": "2026-11-04T07:07:39+00:00", "server": "recipe-cards", "trace_id": "t-20261104-512a0e", "tool": "search_recipes", "args": {"query": "kelp stock", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T07:08:11+00:00", "server": "recipe-cards", "trace_id": "t-20261104-16114c", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "method"}}
+{"ts": "2026-11-04T07:08:41+00:00", "server": "recipe-cards", "trace_id": "t-20261104-24c271", "tool": "search_recipes", "args": {"query": "vegan kimchi", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T07:09:04+00:00", "server": "recipe-cards", "trace_id": "t-20261104-24c271", "tool": "get_recipe_section", "args": {"recipe_id": "R-105", "section": "ingredients"}}
+{"ts": "2026-11-04T07:09:39+00:00", "server": "recipe-cards", "trace_id": "t-20261104-43afbb", "tool": "get_recipe_section", "args": {"recipe_id": "R-123", "section": "method"}}
+{"ts": "2026-11-04T07:10:02+00:00", "server": "recipe-cards", "trace_id": "t-20261104-43afbb", "tool": "search_recipes", "args": {"query": "chickpeas", "dietary_tag": "none"}}
+{"ts": "2026-11-04T07:10:21+00:00", "server": "recipe-cards", "trace_id": "t-20261104-43afbb", "tool": "search_recipes", "args": {"query": "chickpeas", "dietary_tag": "vegan"}}
+{"ts": "2026-11-04T07:10:40+00:00", "server": "recipe-cards", "trace_id": "t-20261104-43afbb", "tool": "get_recipe_section", "args": {"recipe_id": "R-004", "section": "method"}}
+{"ts": "2026-11-04T07:11:06+00:00", "server": "ingredient-db", "trace_id": "t-20261104-b7a1db", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:18:43+00:00", "server": "ingredient-db", "trace_id": "t-20261104-fc99ed", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:19:08+00:00", "server": "ingredient-db", "trace_id": "t-20261104-3e2b02", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:21:18+00:00", "server": "ingredient-db", "trace_id": "t-20261104-238f0e", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:21:44+00:00", "server": "ingredient-db", "trace_id": "t-20261104-d7a2a2", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:22:18+00:00", "server": "ingredient-db", "trace_id": "t-20261104-f7f520", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:22:49+00:00", "server": "ingredient-db", "trace_id": "t-20261104-92c510", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:23:25+00:00", "server": "ingredient-db", "trace_id": "t-20261104-fc2f7d", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:23:58+00:00", "server": "ingredient-db", "trace_id": "t-20261104-6f5e94", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:24:29+00:00", "server": "ingredient-db", "trace_id": "t-20261104-feb338", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:24:58+00:00", "server": "ingredient-db", "trace_id": "t-20261104-f5555f", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:25:27+00:00", "server": "ingredient-db", "trace_id": "t-20261104-d0b26a", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:25:55+00:00", "server": "ingredient-db", "trace_id": "t-20261104-43c8f8", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:27:59+00:00", "server": "ingredient-db", "trace_id": "t-TESTCHECK", "tool": "ingredient_info", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T07:29:57+00:00", "server": "recipe-cards", "trace_id": "doctor-check", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}
