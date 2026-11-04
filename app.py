@@ -101,10 +101,27 @@ def classify_input(question):
 
 
 def tool_descriptions(toolbox):
+    """
+    The tool list the model is shown.
+
+    This function is why seam 9 was only half fixed. The fix went into
+    MCPToolbox.descriptions(), but THIS loop -- the one that actually ships --
+    rebuilds the list itself off tool["schema"]["properties"], so HIDDEN_ARGS
+    never applied here and the prompt went on advertising `trace_id: string`.
+    The model duly filled it in with "trace1".
+
+    Two copies of the same logic with only one of them fixed is worse than one
+    copy that is wrong: the repo then contains a proof that the seam is closed,
+    and the proof is about the copy nobody runs. The hidden list is imported
+    from the client rather than restated here, so exactly one place decides
+    what the model may see.
+    """
+    from agent.mcp_client import MCPToolbox
     blocks = []
     for name, tool in toolbox.tools.items():
         schema = (tool["schema"].get("properties") or {})
-        args = ", ".join(f"{a}: {s.get('type', 'any')}" for a, s in schema.items())
+        args = ", ".join(f"{a}: {s.get('type', 'any')}" for a, s in schema.items()
+                         if a not in MCPToolbox.HIDDEN_ARGS)
         blocks.append(f"{name}({args})\n    {tool['description']}")
     return "\n\n".join(blocks)
 
@@ -195,6 +212,14 @@ def answer_question(question, toolbox, prompt_version=CURRENT_VERSION, user_id="
             answer = f"I couldn't finish this task ({status})."
             break
         seen.add(key)
+
+        # Record the arguments actually SENT, not the ones the model proposed.
+        # The client discards plumbing args on the way out, so a span holding
+        # the raw proposal describes a call that never happened -- which is
+        # precisely how the app log and the server log came to disagree about
+        # which request they were describing.
+        from agent.mcp_client import MCPToolbox as _MT
+        args = {k: v for k, v in args.items() if k not in _MT.HIDDEN_ARGS}
 
         kind = "retrieval" if action in ("search_recipes", "get_recipe_section") else "tools"
         with trace.span(action, kind, args=args) as span:

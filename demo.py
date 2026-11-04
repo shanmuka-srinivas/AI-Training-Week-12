@@ -31,6 +31,17 @@ sys.path.insert(0, str(ROOT))
 
 LINE = "=" * 78
 
+# Our print() calls are block-buffered as soon as this output is piped to a file
+# or a pager, but the subprocess.run() children below write STRAIGHT to the same
+# pipe. Unbuffered, that means every child report lands ABOVE the banner that is
+# supposed to introduce it, and part 4's banner gets nothing under it at all.
+# On a bare terminal it looks fine, which is why it survived until someone
+# captured the output -- which is the first thing a reviewer does.
+try:
+    sys.stdout.reconfigure(line_buffering=True)
+except (AttributeError, OSError):
+    pass
+
 
 def banner(number, title, promise):
     print(f"\n{LINE}\n  PART {number} — {title}\n  {promise}\n{LINE}\n")
@@ -104,6 +115,7 @@ def part2(toolbox):
     print("  ignored it. Code it cannot ignore was the only thing that worked.\n")
 
     print(f"  --- and here is how I would find this from a complaint: trace {green['trace_id']}")
+    sys.stdout.flush()
     subprocess.run([sys.executable, "pantry.py", "trace", green["trace_id"]], cwd=ROOT)
     print("\n  Same trace id in our log AND in the MCP servers' own log. One question,")
     print("  followed all the way out of this process and back.")
@@ -136,8 +148,10 @@ def part3():
         print(f"  | {kind:22} | {ok}/{total} |")
 
     print("\n  --- the path, not just the answer")
+    sys.stdout.flush()
     subprocess.run([sys.executable, "trajectory_report.py"], cwd=ROOT)
     print("\n  --- and where the failures cluster")
+    sys.stdout.flush()
     subprocess.run([sys.executable, "taxonomy_report.py"], cwd=ROOT)
     print("\n  What these numbers do NOT cover: ten cards in one person's handwriting.")
     print("  The parser drops 11 of 16 realistic rows from an eleventh card, silently.")
@@ -146,6 +160,7 @@ def part3():
 def part4():
     banner(4, "WHAT IT COSTS TO RUN",
            "per stage, not one lump — plus what 10x traffic would break first")
+    sys.stdout.flush()
     subprocess.run([sys.executable, "cost_report.py"], cwd=ROOT)
 
 

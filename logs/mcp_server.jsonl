@@ -89,3 +89,10 @@
 {"ts": "2026-11-04T07:25:55+00:00", "server": "ingredient-db", "trace_id": "t-20261104-43c8f8", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
 {"ts": "2026-11-04T07:27:59+00:00", "server": "ingredient-db", "trace_id": "t-TESTCHECK", "tool": "ingredient_info", "args": {"name": "buttermilk"}}
 {"ts": "2026-11-04T07:29:57+00:00", "server": "recipe-cards", "trace_id": "doctor-check", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}
+{"ts": "2026-11-04T09:14:04+00:00", "server": "recipe-cards", "trace_id": "t-20261104-58006f", "tool": "scale_recipe", "args": {"recipe_id": "R-106", "ingredient": "cabbage", "target_grams": 1000.0}}
+{"ts": "2026-11-04T09:14:26+00:00", "server": "ingredient-db", "trace_id": "t-20261104-6223d8", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T09:14:49+00:00", "server": "ingredient-db", "trace_id": "t-20261104-94313d", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T09:15:17+00:00", "server": "ingredient-db", "trace_id": "t-20261104-8d10b0", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T09:15:45+00:00", "server": "ingredient-db", "trace_id": "t-20261104-5ed1de", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T09:18:18+00:00", "server": "ingredient-db", "trace_id": "t-20261104-14963f", "tool": "substitutes_for", "args": {"name": "buttermilk"}}
+{"ts": "2026-11-04T09:19:14+00:00", "server": "recipe-cards", "trace_id": "doctor-check", "tool": "get_recipe_section", "args": {"recipe_id": "R-106", "section": "ingredients"}}

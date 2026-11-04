@@ -156,17 +156,45 @@ the place you go to look when something else is wrong.** Seam 1 exists so a
 complaint can be followed across the process boundary, and this quietly undid
 half of it.
 
-**Fix:** two changes, because "the model cannot see it" is not a control.
+**Fix:** three changes, because "the model cannot see it" is not a control.
 
 1. Plumbing parameters are filtered out of the tool list the model is shown
    (`HIDDEN_ARGS` in `agent/mcp_client.py`). A field the caller always overrides
    has no business being in the caller's prompt.
 2. Any value the model supplies for one is **discarded** before the call, not
    merely overwritten.
+3. The app-side span records the arguments actually **sent**, not the ones the
+   model proposed.
 
-**Proof:** a call passing `trace_id: "trace1"` alongside a real id lands in
-`logs/mcp_server.jsonl` with the real id and no trace of `trace1`, and
-`trace_id` no longer appears anywhere in `descriptions()`.
+### The first fix was incomplete, and the proof is why I did not notice
+
+Changes 1 and 2 went in, I verified them, and I wrote this entry as closed. It
+was not. Running `python pantry.py demo` end to end for the first time printed a
+trace with `"args": {"name": "buttermilk", "trace_id": "trace1"}` still in it.
+
+`MCPToolbox.descriptions()` was fixed. But `tool_descriptions()` in `app.py` —
+**the loop that actually ships** — rebuilt the tool list itself straight off
+`tool["schema"]["properties"]`, so `HIDDEN_ARGS` never applied there. The same
+logic existed in two places and I fixed the one `agent/agent.py` calls, which is
+the week-7 standalone loop that week 12 does not use.
+
+The proof I wrote was the real failure. It asserted `trace_id not in
+descriptions()` — true, and irrelevant, because the shipping prompt is not built
+by that function. **A test aimed at the copy nobody runs reads exactly like a
+passing test.** That is a more dangerous object than the bug it was hiding: the
+bug was one wrong field in a log, and the test was a standing claim that the
+field was right.
+
+Two copies of a decision is the root cause, not the missed edit, so `app.py` now
+imports `MCPToolbox.HIDDEN_ARGS` instead of restating it. One place decides what
+the model may see.
+
+**Proof, rewritten to cover what ships:** `trace_id` appears nowhere in the
+rendered system prompt (`PROMPTS[CURRENT_VERSION].format(tools=...)`), not merely
+nowhere in `descriptions()`. And on live request `t-20261104-14963f` the app
+span reads `{'name': 'buttermilk'}` while `logs/mcp_server.jsonl` reads
+`trace_id=t-20261104-14963f` — same request, same id, both sides, no `trace1`
+anywhere in the record.
 
 **The lesson that generalises:** exposing an internal field in a tool schema is
 an invitation. The model will accept it.

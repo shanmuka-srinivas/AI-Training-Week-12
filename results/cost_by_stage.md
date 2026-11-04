@@ -1,6 +1,6 @@
 # Cost per request, broken down by stage
 
-From 502 production requests (2 of them real runs, the rest simulated traffic with span shapes and token counts sampled from real runs). 49 development requests are excluded: they were mine, and they all landed in one hour.
+From 502 production requests (2 of them real runs, the rest simulated traffic with span shapes and token counts sampled from real runs). 98 development requests are excluded: they were mine, and they all landed in one hour.
 
 Money is what these exact token counts would cost on a hosted model (gemini-2.5-flash-lite, $0.10/$0.40 per million in/out). Run locally the cash cost is $0, but the tokens and the seconds are real.
 
